@@ -11,14 +11,23 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
   },
-  "list": [
-    {
-      "pagePath": "pages/front/front",
-      "text": "前端"
-    },
-    {
-      "pagePath": "pages/back/back",
-      "text": "后端"
-    }
-  ]
+  "tabBar":{
+    "backgroundColor":"#fff",
+    "color":"black",
+    "selectedColor":"#f00",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "最新"
+      },
+      {
+        "pagePath": "pages/front/front",
+        "text": "前端"
+      },
+      {
+        "pagePath": "pages/back/back",
+        "text": "后端"
+      }
+    ]
+  }
 }
