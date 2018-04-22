@@ -1,20 +1,35 @@
-// pages/front/front.js
+// pages/detail/detail.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    basePath: app.host + "images/",
+    pictures:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    console.log(options)
+    wx.request({
+      url: app.host + "type.php",
+      method:'post',
+      header:{
+        'content-type':'application/x-www-form-urlencoded'
+      },
+      data:{
+        name:options.enname
+      },
+      success: this.onLoadSuccess.bind(this)
+    })
   },
-
+  onLoadSuccess:function(msg){
+    this.setData({ pictures: msg.data.data })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

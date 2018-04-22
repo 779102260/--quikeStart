@@ -1,0 +1,3 @@
+<scroll-view>
+  <my-pic pictures="{{types}}" basePath="{{basePath}}" urlKey="jp_url" desKey="jp_name" sid="jp_id"></my-pic>
+</scroll-view>

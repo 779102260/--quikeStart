@@ -2,32 +2,34 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/front/front",
-    "pages/back/back"
+    "pages/hall/hall",
+    "pages/contact/contact",
+    "pages/detail/detail"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "六安墙布批发",
     "navigationBarTextStyle":"black"
   },
   "tabBar":{
     "backgroundColor":"#fff",
     "color":"black",
-    "selectedColor":"#f00",
+    "selectedColor":"#ffc001",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "最新"
+        "text": "2018新品"
       },
       {
-        "pagePath": "pages/front/front",
-        "text": "前端"
+        "pagePath": "pages/hall/hall",
+        "text": "案例展厅"
       },
       {
-        "pagePath": "pages/back/back",
-        "text": "后端"
+        "pagePath": "pages/contact/contact",
+        "text": "联系我们"
       }
     ]
-  }
+  },
+  "debug":true
 }

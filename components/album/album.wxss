@@ -1,0 +1,15 @@
+/* components/album/album.wxss */
+ .album{
+  padding: 2rpx 2rpx 10rpx 2rpx;
+  margin-bottom: 60rpx;
+  background: #f8f8f8;
+  border-bottom-right-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  text-align: center;
+}
+.album image{
+  width: 100%;
+}
+.album text{
+  color: #585454;
+}

@@ -1,0 +1,23 @@
+<!--components/album/album.wxml-->
+<!--
+组件说明：
+形成多个带描述的相册
+每个相册的触发事件为 pictureTap
+接受参数说明：
+1. 数组pictures，图片信息，类似：
+[
+  {
+    urlKey:'绝对路径',
+    desKey:'' //无描述时无
+  }
+]
+2. [urlKey] 默认url,对象中的url键名
+3. [desKey] 默认text,对象中的des键名
+4. [basePath] 默认'', 图片路径前缀
+5. [sid] 默认id，列表标识
+-->
+<view wx:for="{{pictures}}" class="album" data-sid="{{item[sid]}}" bindtap="tap">
+  <image src="{{basePath+item[urlKey]}}"></image>
+  <text wx:if="{{item[desKey]}}">{{item[desKey]}}</text>
+</view>
+
