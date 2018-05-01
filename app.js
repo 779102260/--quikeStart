@@ -1,5 +1,5 @@
 App({
-  host:'http://www.yangqingcheng.xin/'
+  host:'https://www.yangqingcheng.xin/'
 })
 //app.js
 // App({
